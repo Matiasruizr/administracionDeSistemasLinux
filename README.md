@@ -1,20 +1,25 @@
 # administracionDeSistemasLinux
 
 Consultar posicion actual
+```
  ls
- 
+ ```
 Moverse a un directorio 
+```
  cd ruta/directorio
- 
+ ```
 Crear un directorio
+```
   mkdir nombre_directorio
-
+```
 Mover un directorio
+```
   mv img files/images
-  
+```
 Copiar un directorio
+```
  cp archivo ruta/archivo
- 
+ ```
  
 Entrar como root | su | pedira la clave
 
