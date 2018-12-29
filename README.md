@@ -6,6 +6,7 @@ ejemplo
 ls -l (listar hacia abajo)
 ls -h (Legible para humanos)
 ls -a (Todos los archivos)
+|----------------|------------------------|----------------------------------|
 
 ls | Listar | Directorios que dependen de mi posición actual
 pwd | Projet working directori | Donde estoy de mi arbol de directorios
