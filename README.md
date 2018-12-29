@@ -10,12 +10,6 @@ ls -a (Todos los archivos)
 
 
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`           ||'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
 |         |       Significado        |                         Definicion                                                     | 
 |---------|--------------------------|----------------------------------------------------------------------------------------|
 |ls       | Listar                   |Directorios que dependen de mi posición actual                                          |
@@ -29,67 +23,12 @@ ls -a (Todos los archivos)
 | cp      | Copy                     |  Copia un archivo                                                                      |
 | pushd   | [directorio a guardar]   | Checkpoint de directorio comun a guardar                                               |
 | popd    | Regreso a pushd          | regresa a directorio guardado                                                          |
-
-Listar
-```
- ls
- ```
-Moverse a un directorio 
-```
- cd ruta/directorio
- ```
-Crear un directorio
-```
-  mkdir nombre_directorio
-```
-Mover un directorio
-```
-  mv img files/images
-```
-Copiar un directorio
-```
- cp archivo ruta/archivo
- ```
+|more     | Vista previa a datos     | Previsualiza archivos de datos o texto (md,text,csv,etc)                               |
+| cat     | Datos de archivo         | Muestra todos los datos de archivo (md, txt, csv, etc)                                 |
+| tail    | DAtos orden inverso      | Lee archivo, en sistema contrario a cat, osea desde el ultimo al primero               |
  
 Entrar como root | su | pedira la clave
 
-
-hostnamectl set-hostname your-new-hostname
-
-Agregar desde controlador sagta
-Configuracion > almacenamiento > mas
-
-  Elegir cuanto debe ser el maximo
-  Luego debe ser dinamico
-
-fdisk -l para listar todos los discos
-fdisk ruta del disco
-
-
-n
-
-p
-
-1
-
-lsblk
-
-
-Luego lo mismo 
-
-n
-
-e
-
-1
-Valor primario 'Enter'
-Ultimo valor 'Enter'
-
-n
-
-l
-
-+10G
 
 
 sudo useradd -m -g Usuarios -G gestion - s /bin/bash usuario
