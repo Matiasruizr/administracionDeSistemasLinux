@@ -8,18 +8,27 @@ ls -h (Legible para humanos)
 ls -a (Todos los archivos)
 
 
-|----------------|------------------------|----------------------------------|
-|ls | Listar | Directorios que dependen de mi posición actual|
-|pwd | Projet working directori | Donde estoy de mi arbol de directorios|
-|cd | Change Directory | Navega entre directorios|
-|~ | Home | Con esto podemos obtener urls absolutas para acceder a cualquier lugar|
-|mkdir | Make Directory | Crea una directoio|
-|touch | Tocar | Si no existe el archivo lo crea, y si exista cambia su fecha de moficiacion a la actual|
-| mv | Move | Mueve o cambia de nombre, aclarar *mv archivo.pdf ~/Downloads/* |
-| rm | Remove | Remueve archivos, con -r elimina directorios |
-| cp | Copy |  Copia un archivo |
-| pushd | [directorio a guardar] | Checkpoint de directorio comun a guardar |
-| popd | Regreso a pushd | regresa a directorio guardado |
+
+
+|                |ASCII                          |HTML                         |
+|----------------|-------------------------------|-----------------------------|
+|Single backticks|`'Isn't this fun?'`           ||'Isn't this fun?'            |
+|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
+|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+
+|         |       Significado        |                         Definicion                                                     | 
+|---------|--------------------------|----------------------------------------------------------------------------------------|
+|ls       | Listar                   |Directorios que dependen de mi posición actual                                          |
+|pwd      | Projet working directori | Donde estoy de mi arbol de directorios                                                 |
+|cd       | Change Directory         | Navega entre directorios                                                               |
+|~        | Home                     | Con esto podemos obtener urls absolutas para acceder a cualquier lugar                 |
+|mkdir    | Make Directory           | Crea una directoio                                                                     |
+|touch    | Tocar                    | Si no existe el archivo lo crea, y si exista cambia su fecha de moficiacion a la actual|
+| mv      | Move                     | Mueve o cambia de nombre, aclarar *mv archivo.pdf ~/Downloads/*                        |
+| rm      | Remove                   | Remueve archivos, con -r elimina directorios                                           |
+| cp      | Copy                     |  Copia un archivo                                                                      |
+| pushd   | [directorio a guardar]   | Checkpoint de directorio comun a guardar                                               |
+| popd    | Regreso a pushd          | regresa a directorio guardado                                                          |
 
 Listar
 ```
