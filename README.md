@@ -32,10 +32,12 @@ Entrar como root | su | pedira la clave
 
 
 # Streams 
+Los streams son una forma de enviar datos a un comando y recibir un output de salida.
 
-Inputs. Entrada de datos al programa
-Output. Salida de datos al usuario
-Buenas prácticas: guardar mensajes de errores en algún lado, no ignorarlos.
+STDIN Standard Input. Parametro de entrada.
+STDOUT Standard Output. Es la salida por defecto.
+STDERR Standard Error. Es la salida en caso suceda un error
+
 
 ##  Ejemplo 1 # usando “>”
 Se ha ejecutado un _proceso _X con una entrada (input) y dos salidas (outputs), 1 de resultado exitoso y 2 de control de errores, los tipos de output se llaman 1: STDOUT 2: STDERR, tipos de input STDIN ; luego, ejecución del _proceso _ crea 2 documentos:
