@@ -27,7 +27,9 @@ ls -a (Todos los archivos)
 | cat     | Datos de archivo         | Muestra todos los datos de archivo (md, txt, csv, etc)                                 |
 | tail    | DAtos orden inverso      | Lee archivo, en sistema contrario a cat, osea desde el ultimo al primero               |
 | alias   | crea un alias de comando | Ejemplo alias miserver='shh roo@93.298.298.3"                                          |
- 
+| top     | todos los procesos       | Lista todos los procesos                                                               |
+| kill    | Mata proceso             | -9 Mata desde 0 el proceso kill -9 id                                                         |
+
 Entrar como root | su | pedira la clave
 
 
