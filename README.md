@@ -13,6 +13,7 @@ ls -a (Todos los archivos)
 |         |       Significado        |                         Definicion                                                     | 
 |---------|--------------------------|----------------------------------------------------------------------------------------|
 |ls       | Listar                   |Directorios que dependen de mi posición actual                                          |
+|ls -sal* | Listar -busca wildcard   |Bjusca todos los directorios que empiezen con sal* puede ser los que terminen con *sal  |
 |pwd      | Projet working directori | Donde estoy de mi arbol de directorios                                                 |
 |cd       | Change Directory         | Navega entre directorios                                                               |
 |~        | Home                     | Con esto podemos obtener urls absolutas para acceder a cualquier lugar                 |
@@ -28,8 +29,8 @@ ls -a (Todos los archivos)
 | tail    | DAtos orden inverso      | Lee archivo, en sistema contrario a cat, osea desde el ultimo al primero               |
 | alias   | crea un alias de comando | Ejemplo alias miserver='shh roo@93.298.298.3"                                          |
 | top     | todos los procesos       | Lista todos los procesos                                                               |
-| kill    | Mata proceso             | -9 Mata desde 0 el proceso kill -9 id                                                         |
-
+| kill    | Mata proceso             | -9 Mata desde 0 el proceso kill -9 id                                                  |
+| ps      | Proccess                 | Muestra todos los procesos que se están ejecutando y desde donde vienen.               |  
 Entrar como root | su | pedira la clave
 
 
