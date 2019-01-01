@@ -31,7 +31,40 @@ ls -a (Todos los archivos)
 Entrar como root | su | pedira la clave
 
 
+# Streams 
 
+Inputs. Entrada de datos al programa
+Output. Salida de datos al usuario
+Buenas prácticas: guardar mensajes de errores en algún lado, no ignorarlos.
+
+##  Ejemplo 1 # usando “>”
+Se ha ejecutado un _proceso _X con una entrada (input) y dos salidas (outputs), 1 de resultado exitoso y 2 de control de errores, los tipos de output se llaman 1: STDOUT 2: STDERR, tipos de input STDIN ; luego, ejecución del _proceso _ crea 2 documentos:
+php 1-streams.php 1> salidas 2> errores
+le proveemos un número para buscar los múltiplos de este
+tail -f documento.txt (-f hace seguimiento del documento conforme se modifica o crece)
+atrapamos las actualizaciones del proceso leyendo constantemente la salida y error en 2 diferentes terminales:
+tail -f salidas
+tail -f errores
+Para terminar con el _proceso _ o el tail -f que no paran de correr presionamos Ctrl + C
+
+##  Ejemplos 2 # usando “>” y “>>”
+ejecución del proceso:
+php 1-streams.php >> salidas
+solo va a llenar las salidas al documento, los errores van a la terminal del proceso
+además va a abrir y continuar el archivo (append, concatenar, modificar)
+php 1-streams.php 1>> salidas 2>> errores
+modifica los archivos de salida y error agregando nuevos logs
+php 1-streams.php > salidayerror.txt 2>&1
+ahora crea un documento al que se le pasa la salida (1)
+y se le direcciona también el error (2) con ese “2>&1”
+como colar el resultado 2 también a donde vaya el 1
+
+## Ejemplo 3 # usando “<”
+en el ejemplo tiene un documento de texto “all_schema.sql” con instrucciones para que el mysql las ejecute y cree una base de datos y unas tablas según el esquema que ha diseñado en texto plano y se las va a insertar al programa para que lo aplique, pero con “<” algo así sistemadebasesdedatos < elarchivodeesquema
+mysql -u root -p < all_schema.sql
+“-u root -p” es para especificar el usuario “-u david” que aplica el cambio y su password “-p” si es que pide contraseña luego de presionar enter
+                                 
+                                 
 sudo useradd -m -g Usuarios -G gestion - s /bin/bash usuario
 
 
