@@ -33,7 +33,10 @@ ls -a (Todos los archivos)
 | ps      | Proccess                 | Muestra todos los procesos que se están ejecutando y desde donde vienen.               |  
 | ps      | Proccess                 | Muestra todos los procesos que se están ejecutando y desde donde vienen.               | 
 |find     | Buscar                   | find  [ruta] -name [nombre]                                                            |
-|grep     |
+|grep     |                          |                                                                                        |
+| x > y   | Ejectuable > archivo     | Guarda el resultado de un find, grep, etc  en el archivo > archivo                     |
+| wc -l   | cuenta                   | ejemplo wc ls *.jpg | wc -l (Cuenta todos los jpg en el listar                         |
+| curl    | Emula un browser         |
 
 # Herramientas de Busqueda 
 Buscar cadenas de caracteres
@@ -44,6 +47,9 @@ grep -r [ruta] -e [expresion] nos ayuda a encontrar cadenas de caracteres dentro
 -n: numero de linea donde se encuentra la palabra en el archivo
 -e: expresion regular
 -i: no importa si es mayuscula o minuscula
+Ejemplo: grep airports.csv -e "Chile"
+
+
 Buscar archivos
 
 find [ruta] -name [nombre] busca en base al nombre y la metadata dentro del directorio que le digamos.
@@ -55,6 +61,24 @@ Podemos hacer un find en un ls, ejemplo;
 ls -lh *.php 
 El comando anterior lista todos los archivos de tipo php
 
+
+Emular un navegador
+
+curl [url] emula un navegador.
+
+> [nombre] descarga el archivo con el nombre que le has dado.
+-o [nombre] igual que el anterior
+Comprimir archivos
+
+zip [nombre.zip] [archivo a comprimir]: agrega o reemplaza las entradas de un archivo zip de la lista, que puede incluir el nombre especial para comprimir la entrada.
+
+upzip [archivo] descomprime un .zip
+
+-vl no descomprime sino que ve lo que hay adentro
+tar es un comando similar a zip, junta varios archivos en uno solo sin comprimirlos. Después se le dicta un algoritmo de compresión, que es zip.
+
+cfz [archivo.tar.gz] junta y comprime
+xfz [archivo .tar.gz] descomprime
 
 Entrar como root | su | pedira la clave
 Podemos encadenar comandos uno detras de otro con ;
