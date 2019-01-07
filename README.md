@@ -31,7 +31,33 @@ ls -a (Todos los archivos)
 | top     | todos los procesos       | Lista todos los procesos                                                               |
 | kill    | Mata proceso             | -9 Mata desde 0 el proceso kill -9 id                                                  |
 | ps      | Proccess                 | Muestra todos los procesos que se están ejecutando y desde donde vienen.               |  
+| ps      | Proccess                 | Muestra todos los procesos que se están ejecutando y desde donde vienen.               | 
+|find     | Buscar                   | find  [ruta] -name [nombre]                                                            |
+|grep     |
+
+# Herramientas de Busqueda 
+Buscar cadenas de caracteres
+
+grep -r [ruta] -e [expresion] nos ayuda a encontrar cadenas de caracteres dentro de todos los archivos de la ruta que le demos, con expresiones regulares.
+
+-r: que sea recursivo
+-n: numero de linea donde se encuentra la palabra en el archivo
+-e: expresion regular
+-i: no importa si es mayuscula o minuscula
+Buscar archivos
+
+find [ruta] -name [nombre] busca en base al nombre y la metadata dentro del directorio que le digamos.
+
+-name: el nombre del archivo (*.js devuelve todos los archivos que terminan con .js)
+-type: el tipo
+
+Podemos hacer un find en un ls, ejemplo;
+ls -lh *.php 
+El comando anterior lista todos los archivos de tipo php
+
+
 Entrar como root | su | pedira la clave
+Podemos encadenar comandos uno detras de otro con ;
 
 
 # Streams 
