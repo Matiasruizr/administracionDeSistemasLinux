@@ -119,7 +119,16 @@ en el ejemplo tiene un documento de texto “all_schema.sql” con instrucciones
 mysql -u root -p < all_schema.sql
 “-u root -p” es para especificar el usuario “-u david” que aplica el cambio y su password “-p” si es que pide contraseña luego de presionar enter
                                  
-                                 
+
+
+# Pipe
+Nos permite concatenar comandos
+ls -l | wc -l: cuantas lineas tiene este
+cat [peliculas.csv] | wc -l: nos indica cuantas lineas tiene este archivo.
+cat [peliculas.csv] | wc -l | grep [Thriller] wc -l : nos indica cuantas lineas tiene del parametro que estamos buscando.
+** cat movies.dat | grep Thriller | awk -F"::" '{printf("%s\n", $3)}’: nos imprime las categorias que contenga Thriller
+** cat movies.dat | grep Thriller | awk -F"::" ‘{printf("%s\n", $3)}’ | grep -v Comedy : grep -v evitamos que no nos imprima el parametro que le mandamos.
+
 sudo useradd -m -g Usuarios -G gestion - s /bin/bash usuario
 
 
