@@ -129,6 +129,52 @@ cat [peliculas.csv] | wc -l | grep [Thriller] wc -l : nos indica cuantas lineas 
 ** cat movies.dat | grep Thriller | awk -F"::" '{printf("%s\n", $3)}’: nos imprime las categorias que contenga Thriller
 ** cat movies.dat | grep Thriller | awk -F"::" ‘{printf("%s\n", $3)}’ | grep -v Comedy : grep -v evitamos que no nos imprima el parametro que le mandamos.
 
+
+# Crontab
+https://crontab.guru/
+crontab permite programar la ejecución de scripts.
+
+-l muestra la lista de crontab
+-e editar la tabla crontab. Con esto se pueden agregar más scripts
+
+
+Columnas:
+
+minuto 0-59
+hora 0-23
+dia mes 1-31
+mes 1-12
+dia semana: 0-7 (0 y 7 domingo)
+script/comando
+Ejemplo 1 para la columna minuto
+1 Se ejecuta en el minuto 1
+1,10,18 Se ejecuta en el minuto 1, 10 y 18
+*/5 Se ejecuta cada 5 minutos
+1-10 Se ejecuta los primeros 10 minutos de cada hora
+* Se ejecuta cada minuto
+
+Ejemplo 2
+
+*/15 4 * * * script.sh
+Ejecuta script.sh
+
+todos los días de la semana
+todos los meses
+todos los días del mes
+a las 4 am
+cada 15 minutos
+Ejemplo 3
+
+0 3 * * 1 script.sh
+Ejecuta script.sh
+
+solo si es lunes
+todos los meses
+todos los días del mes
+a las 3 am
+en el minuto cero
+Nota: al momento de editar la tabla de crontab, asegurarse que se vea ordenado las columnas.
+
 sudo useradd -m -g Usuarios -G gestion - s /bin/bash usuario
 
 
