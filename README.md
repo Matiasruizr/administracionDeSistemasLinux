@@ -138,6 +138,8 @@ crontab permite programar la ejecución de scripts.
 -e editar la tabla crontab. Con esto se pueden agregar más scripts
 
 
+
+
 Columnas:
 
 minuto 0-59
@@ -175,7 +177,27 @@ a las 3 am
 en el minuto cero
 Nota: al momento de editar la tabla de crontab, asegurarse que se vea ordenado las columnas.
 
+
+# Uso del disco
+
+du muestra la cantidad de espacio usado por los archivos en un directorio.
+
+-h muestra el output de una manera que se pueda leer mejor.
+-d [numero] nivel de profundidad. Cuántos niveles baja de carpeta.
+Links
+
+ln -s [ruta del directorio] [alias] Crea un alias que apunta a un directorio.
+
+-s link simbolico. Si se usa este parámetro con rm solo se elimina el acceso directo.
+ls -s C:/carpeta alias_file 
+cdalias_file
+La terminal está interpretando cd C:/carpeta.
+
+
+
 sudo useradd -m -g Usuarios -G gestion - s /bin/bash usuario
+
+
 
 
 # Añadir usuarios
